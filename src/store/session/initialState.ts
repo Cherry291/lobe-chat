@@ -18,7 +18,6 @@ export interface SessionState {
   router?: AppRouterInstance;
   searchKeywords: string;
   sessions: LobeAgentSession[];
-  topicSearchKeywords: string;
 }
 
 export const initLobeSession: LobeAgentSession = {
@@ -47,5 +46,4 @@ export const initialState: SessionStoreState = {
   isMobile: false,
   searchKeywords: '',
   sessions: [],
-  topicSearchKeywords: '',
 };

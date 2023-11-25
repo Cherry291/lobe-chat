@@ -18,7 +18,9 @@ export interface ChatStoreState {
   messageLoadingIds: [];
   messages: ChatMessage[];
   shareLoading?: boolean;
+  topicSearchKeywords: string;
   topics: ChatTopic[];
+  topicsInit: boolean;
 }
 
 export const initialState: ChatStoreState = {
@@ -27,5 +29,7 @@ export const initialState: ChatStoreState = {
   inputMessage: '',
   messageLoadingIds: [],
   messages: [],
+  topicSearchKeywords: '',
   topics: [],
+  topicsInit: false,
 };
